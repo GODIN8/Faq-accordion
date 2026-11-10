@@ -1,3 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(0, 100%, 100%);
+    --light-purple: hsl(275, 100%, 97%);
+    --purple:hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+body{
+    background-color: var(--light-purple);
+    background-image: url(images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Work Sans";
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border: 0;
+}
+
+button:hover{
+    color: var(--purple);
+}
+
+.container{
+    background-color: var(--white);
+    max-width: 800px;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.faq{
+    display: flex;
+    gap: 1rem;
+}
+
+.faq h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container .accordion{
+    border-bottom: 2px solid var(--light-purple);
+}
+
 .attribution { 
     font-size: 0.6875rem;
     text-align: center; 
